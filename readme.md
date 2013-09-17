@@ -4,6 +4,8 @@ This is a little single-page static website I developed for [Advice](http://www.
 
 Expect to find a lot of hacks and ugly code that was written the night before the final deadline. That said, the reason I considered uploading this is because I figured it could be of use to someone looking for a real example of either an Impress or a Roots website.
 
+Designed by [Ioana Ichim](http://ioanaichim.com/). Licensed under the WTFPL.
+
 ### Installation
 Install Roots, then:
 ```
