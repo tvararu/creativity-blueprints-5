@@ -1,0 +1,298 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=latin,latin-ext)
+@import '_settings'
+@import 'bootstrap.min.css'
+
+normalize()
+base()
+typography()
+lists()
+
+.too-bad
+  padding 60px 20px 0px
+  a
+    link(white)
+
+.navbar
+  pointer-events auto
+
+h1, h2, h3, h4, h5, h6
+  color white
+
+h1, h2, h3, h4
+  font-weight 100
+  
+a, a:hover, a:focus
+  border-bottom none
+
+.center
+  text-align center
+
+body
+  background light-blue
+  transition background 0.7s
+  color white
+
+.step
+  color white
+  size 620px 620px
+  margin 0 auto
+  padding 20px
+  padding-top 60px
+  overflow hidden
+  pointer-events auto
+
+.impress-enabled
+  pointer-events none
+  
+  .too-bad
+    display none
+
+.impress-enabled .step
+  opacity 0
+  transition opacity 0.7s
+  pointer-events none
+
+.impress-enabled .step.active
+  opacity 1
+
+#overview
+  display none
+  
+.impress-on-overview .step
+  background rgba(0, 0, 0, 0.5)
+  opacity 1
+  cursor pointer
+  
+.impress-on-pink
+  background pink
+  font-family Comic Sans MS, Serif
+  
+  .step
+    opacity 1
+    pointer-events auto
+
+.impress-on-result-a
+  background asphalt !important
+  
+.impress-on-result-b
+  background white !important
+
+.impress-enabled #result-b
+  h2
+    color black
+  color black
+  
+.impress-on-result-c
+  background black !important
+
+.step.active
+  opacity 1
+  pointer-events auto
+
+#home, #program, .advice, .editii, #parteneri, #result-a, #result-b, #result-c
+  height 830px
+
+.editii
+  overflow-y scroll
+  ul li
+    list-style-type none
+  a
+    link(#ddd)
+  // p
+  //   margin 0px
+  //   line-height 25px
+
+#program
+  overflow-y scroll
+  
+  h2
+    margin 0px
+  
+  ul
+    margin 0px
+    margin-top 20px
+    padding 0px
+    
+    li
+      cursor pointer
+      list-style-type none
+      line-height 50px
+      
+      .description
+        display none
+        
+        p
+          margin 0px
+        h6
+          margin 0px
+          margin-top 10px
+  strong
+    color dark-blue
+  
+p a
+  link(#ddd)
+    
+.antiscroll-inner
+  size 620px 830px
+
+.test
+  a, div
+    link(white)
+  div
+    cursor pointer
+  ol
+    margin-top 50px
+    margin-bottom 50px
+    li
+      list-style-type lower-latin
+
+.dropdown .caret
+  margin-top 8px
+  margin-left 5px
+
+.caret
+  border-top 4px solid white
+
+#parteneri
+  img
+    width 100%
+
+.hero
+  .logo
+    width 100%
+  
+  h2
+    font-size 36px
+  
+  p
+    line-height 1.3em
+    font-size 25px
+    color dark-blue
+  
+  
+  .buttons
+    margin-top 30px
+    
+    img
+      height 170px
+    
+    .program
+      margin-left 74px
+    
+    .concurs
+      float right
+  
+  .clearfix
+    margin-top 0px
+    fs 32px
+    
+    a
+      color dark-blue
+    
+    .despre
+      margin-left 18px
+    
+    .program
+      margin-left 124px
+    
+    .concurs
+      float right
+      margin-right 14px
+  
+  .btn
+    simple-button(dark-blue, 30)
+    border-radius 0px
+    margin-top 30px
+    display block
+  
+  .advice
+    color white
+    text-align right
+    line-height 100px
+    img
+      height 100px
+      float right
+      margin-left 10px
+
+.btn
+  simple-button(dark-blue, 30)
+  border-radius 0px
+
+.btn, .btn-green, .btn-grey
+  display block
+
+.navbar-inner
+  width 100%
+  margin 0px
+  
+  > ul
+    width 100%
+    fixed top left
+    margin 0px
+    inline-list()
+    z-index 1000000
+    
+    > li
+      width 20%
+      margin 0px
+      padding 0px
+      background dark-blue
+      
+      a
+        span
+          link(white)
+          display block
+          margin 0 auto
+          padding 15px 0px
+          text-align center
+          fs 15px
+          height 17px
+        
+        .brand
+          padding-top 9px
+          padding-bottom 21px
+          height 17px
+          img
+            height 29px
+            margin 0px auto
+            display block
+    
+    .dropdown
+      
+      .dropdown-menu
+        margin 0px
+        padding 0px
+        
+        li
+          width 100%
+          padding 0px
+
+.concurs
+  a
+    link(#ddd)
+  img
+    display block
+    margin 0 auto
+
+span.next
+  display block
+  margin 0 auto
+  color white
+  text-align center
+  i
+    fs 100px
+
+::-moz-selection
+  background asphalt
+  color white
+
+::selection
+  background asphalt
+  color white
+
+// mozilla specific styles go here
+@-moz-document url-prefix()
+  a:focus
+    outline 0 // fixes ugly borders around selected nav elements
+  nav ul
+    z-index 1 // fixes nav not working at all

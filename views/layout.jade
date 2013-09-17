@@ -1,0 +1,45 @@
+!!!
+html
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='viewport', content='width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no')
+    link(rel="image_src", href="img/scaun.png")
+    meta(name='description', content='Creativity Blueprints, singura şcoală gratuită de creaţie în publicitate pentru studenţii din România.')
+    
+    title Creativity Blueprints 5
+    link(rel='stylesheet', href='css/master.css')
+    link(rel='stylesheet', href='components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='components/antiscroll/antiscroll.css')
+      
+    script
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40357921-1', 'creativityblueprints.ro');
+      ga('send', 'pageview');
+    
+  body.impress-not-supported
+    .too-bad
+      h1 Hopa, a fost întâmpinată o problemă :(
+      p
+        | Browserul tău nu poate să redea varianta completă a site-ului Creativity Blueprints 5. În schimb, nu putem decât să îți oferim varianta asta simplificată. Pentru a îl vizualiza în mod corect, te rugăm sa instalezi 
+        a(href="https://www.google.com/intl/ro/chrome/browser/", target="_blank") Google Chrome
+        |  sau 
+        a(href="http://www.mozilla.org/ro/firefox/new/", target="_blank") Mozilla Firefox
+        | .
+      // if IE
+        p
+          | Dacă nu ai drepturi de administrator sau preferi Internet Explorer în locul altor browsere, recomandăm să instalezi 
+          a(href="http://www.google.com/chromeframe?quickenable=true", target="_blank") Google Chrome Frame
+          | .
+    .container
+      != yield
+
+  script(data-main="js/main", src="components/antiscroll/deps/jquery.js")
+  script(data-main="js/main", src="components/impress.js/js/impress.js")
+  script(data-main="js/main", src="js/main.js")
+  script(data-main="js/main", src="js/bootstrap-dropdown.min.js")
+
+  != livereload
