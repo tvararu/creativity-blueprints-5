@@ -7,8 +7,14 @@ Expect to find a lot of hacks and ugly code that was written the night before th
 Designed by [Ioana Ichim](http://ioanaichim.com/). Licensed under the WTFPL.
 
 ### Installation
-Install Roots, then:
+The latest version of this project was confirmed to compile on Roots **v2.1.3**. So, make sure you have that version:
+
+```bash
+npm install roots@2.1.3
 ```
+
+Then, clone as usual, and start the watcher:
+```bash
 git clone https://github.com/tvararu/creativity-blueprints-5.git cb5
 cd cb5
 roots watch
