@@ -2,7 +2,7 @@
   "name": "roots-app",
   "version": "0.0.1",
   "dependencies": {
-    "connect": "2.6.x"
+    "connect": "~3.6.1"
   },
   "engines": {
     "node": "0.8.x",
